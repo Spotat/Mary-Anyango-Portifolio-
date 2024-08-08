@@ -1215,10 +1215,11 @@ footer {
         display: flex;
         flex-direction: row;
         gap: var(--gap, 2em);
+        margin-top: 15px;
     }
     .blog > img {
-        width: 150px;
-        height: 150px;
+        width: 17vh;
+        height: 15vh;
         border-radius: 2px;
         box-shadow: rgba(0, 0, 0, 0.2);
     }

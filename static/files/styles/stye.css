@@ -724,7 +724,7 @@ footer {
     }
     .logo {
         font-size: 1.3rem;
-        font-weight: 580;
+        font-weight: 780;
         align-self: flex-start;
     }
     .navbar {
@@ -769,7 +769,7 @@ footer {
         position: relative;
     }
     .intro-col h3 {
-        font-size: 5vh;
+        font-size: 3em;
         color: var(--accent-6);
         font-family: Montserrat;
         font-weight: 660;
@@ -789,14 +789,14 @@ footer {
     }
     .intro-col button {
         padding: 10px 15px;
-        font-weight: 506;
+        font-weight: 606;
     }
     .intro-col:nth-child(1){
         margin-top: 4rem;
     }
     .intro-col img {
         width: 100%;
-        height: 350px;
+        height: 400px;
     }
     .intro-overlay {
         width: 100%;
@@ -821,7 +821,7 @@ footer {
     }
     .about-cont > img {
         width: 100%;
-        height: 30vh;
+        height: 350px;
     }
     .about-container {
         /* padding: 3rem; */
@@ -829,7 +829,7 @@ footer {
     }
     .about-container > h1 {
         font-family: Montserrat;
-        font-size: 7vh;
+        font-size: 4em;
         height: 100%;
     }
     /* @keyframes fonter {
@@ -864,10 +864,10 @@ footer {
         text-align: end;
     }
     .paragraph > p:nth-child(2) {
-        color: var(--accent-3);
+        /* color: var(--accent-); */
         font-family: Montserrat;
-        font-weight: 200;
-        margin-top: 2em;
+        font-weight: 500;
+        margin-top: 3em;
     }
     /* about container */
     .about {
@@ -907,11 +907,12 @@ footer {
     }
     .services > h1 {
         font-family: Montserrat;
-        font-size: 3.5vh;
+        /* font-size: 3.5vh; */
+        font-size: 2em;
         color: var(--color-secondary);
         text-align: center;
         margin-bottom: 4rem;
-        font-weight: 560;
+        font-weight: 660;
     }
     .service-container {
         flex-direction: column;
@@ -928,13 +929,14 @@ footer {
         
     }
     .service > h2 {
-        
+        font-weight: 600;
+        font-size: 1.3em;
     }
     .service > p {
-        
+        font-weight: 500;
     }
     .service > button {
-        
+        font-weight: 600;
     }
     .service > button:hover {
         

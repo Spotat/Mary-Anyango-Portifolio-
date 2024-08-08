@@ -808,7 +808,7 @@ footer {
 }
 
 
-@media (max-width: 570px) {
+@media (max-width: 770px) {
     body {
         overflow-x: hidden;
         gap: 1em;

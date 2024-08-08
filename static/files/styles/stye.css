@@ -94,17 +94,25 @@ header {
     border-radius: 25px;
     background: var(--accent-6);
 }
-.header > .humburger {
+.checkbtn {
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: .1em;
-    margin-right: .3em;
+    /* margin-top: 10px;*/
+    margin-right: 10px; 
     color: var(--accent-6);
-    font-size: 2.5vh;
+    font-size: 30px;
     border-radius: 70% 30% 30% 70% / 30% 30% 70% 70%;
     padding: 15px;
     background: #6a948a42;
+    border: none;
+}
+#check {
+    display: none;
+}
+#check:checked ~ .navbar {
+    left: 0;
+    opacity: 1;
 }
 .introduction-cont {
     width: 100%;
@@ -716,23 +724,36 @@ footer {
         width: 100%;
         position: relative;
         max-width: 100%;
-        padding: 1rem;
+        padding: 1em 0;
         margin-top: 10px;
         flex-direction: column;
-        box-shadow: -2px 2px 6px rgba(0,0,0,0.1);
+        box-shadow: none;
+        /* box-shadow: -2px 2px 6px rgba(0,0,0,0.1); */
         /* padding: 1rem 8rem; */
     }
     .logo {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 780;
         align-self: flex-start;
+        padding: 10px;
     }
     .navbar {
-        display: block;
-        visibility: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 99;
+        background: #292426e0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4em;
+        justify-content: center;
+        left: -100%;
+        opacity: 0;
+        transition: all .6s ease;
     }
     .navbar > a{
-        font-size: var(--text-size-sub-heading);
+        font-size: 20px;
         color: var(--color-secondary);
         text-decoration: none;
         /* margin-left: 10px; */
@@ -740,11 +761,6 @@ footer {
     }
     .navbar >#float {
         margin-left: 0;
-        border-radius: 25px;
-        background: var(--accent-6);
-        position: absolute;
-        top: 0;
-        right: 0;
     }
     /* introduction cont */
     .introduction-cont {
@@ -769,7 +785,7 @@ footer {
         position: relative;
     }
     .intro-col h3 {
-        font-size: 3em;
+        font-size: 2.5em;
         color: var(--accent-6);
         font-family: Montserrat;
         font-weight: 660;
@@ -829,7 +845,7 @@ footer {
     }
     .about-container > h1 {
         font-family: Montserrat;
-        font-size: 4em;
+        font-size: 3.2em;
         height: 100%;
     }
     /* @keyframes fonter {
@@ -936,7 +952,7 @@ footer {
         font-weight: 500;
     }
     .service > button {
-        font-weight: 600;
+        font-weight: 600        ;
     }
     .service > button:hover {
         

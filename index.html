@@ -12,7 +12,7 @@
 </head>
 <body>
     <img src="./static/files/assets/interior-4400306_1280.jpg" alt="" class="body-overlay">
-    <header class="header">
+    <!-- <header class="header">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fa fa-bars"></i>
@@ -23,12 +23,27 @@
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Portifolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Testimonials</a>
+            <a href="#blog">Blog</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#" id="float">Contact</a>
         </div>
+    </header> -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Mary Anyango</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./templates/about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="./templates/portfolio.html">Portfolio</a></li>
+                <li><a href="#" class="left">Contact me!</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span class="fa fa-bars humburger"></span>
+            </button>
+        </nav>
     </header>
-    <section class="reveal introduction-cont">
+    <section class="introduction-cont">
         <div class="introduction">
             <div class="intro-col">
                 <h3>Welcome to my professional portifolio!</h3>
@@ -102,7 +117,7 @@
                     </div>
                 </div>
                 <div class="project">
-                    <div class="project-image"><img src="./static/files/assets/books-2596809_1280.jpg" alt=""></div>
+                    <div class="project-image"><img src="./static/files/assets/IMG-20240811-WA0073.jpg" alt=""></div>
                     <div class="project-body">
                         <h2>You better be strong.<i class="fa fa-arrow-right"></i></h2>
                         <div class="project-role">
@@ -144,42 +159,56 @@
         <h1>What my clients say.</h1>
         <div class="test-container">
             <button class="prev" onclick="showSlide(-1)">&#10094</button>
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <span class="fa fa-quote-left"></span>
-                    <p>Working with Mary Anyango has been one of the best experiences i have had. She never fails to deliver.</p>
-                    <div class="profile">
-                        <img src="./static/files/assets/IMG-20240221-WA0007.jpg" alt="" class="profile-image">
-                        <div class="profile-text">
-                            <h2 class="title">Mary Smushchk</h2>
-                            <p class="position">- CEO Writer's Mellincon</p>
+            <div class="testimonial-cont">
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <p>Working with Mary Anyango has been one of the best experiences i have had. She never fails to deliver.</p>
+                        <div class="profile">
+                            <img src="./static/files/assets/IMG-20240221-WA0007.jpg" alt="" class="profile-image">
+                            <div class="profile-text">
+                                <h2 class="title">Mary Smushchk</h2>
+                                <p class="position">- CEO Writer's Mellincon</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial">
-                    <span class="fa fa-quote-left"></span>
-                    <p>Working with Mary Anyango has been a game changer for my writing. Highly recommend!</p>
-                    <div class="profile">
-                        <img src="./static/files/assets/IMG-20240221-WA0008.jpg" alt="" class="profile-image">
-                        <div class="profile-text">
-                            <h2 class="title">Boke Joyce Wambura</h2>
-                            <p class="position">- Freelance Creative Writer</p>
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <p>Working with Mary Anyango has been a game changer for my writing. Highly recommend!</p>
+                        <div class="profile">
+                            <img src="./static/files/assets/IMG-20240221-WA0008.jpg" alt="" class="profile-image">
+                            <div class="profile-text">
+                                <h2 class="title">Boke Joyce Wambura</h2>
+                                <p class="position">- Freelance Creative Writer</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial">
-                    <span class="fa fa-quote-left"></span>
-                    <p>Working with Mary Anyango has been one of the best experiences i have had. She never fails to deliver.</p>
-                    <div class="profile">
-                        <img src="./static/files/assets/interior-4400306_1280.jpg" alt="" class="profile-image">
-                        <div class="profile-text">
-                            <h2 class="title">Mary Smushchk</h2>
-                            <p class="position">- CEO Writer's Mellincon</p>
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <p>Working with Mary Anyango has been one of the best experiences i have had. She never fails to deliver.</p>
+                        <div class="profile">
+                            <img src="./static/files/assets/interior-4400306_1280.jpg" alt="" class="profile-image">
+                            <div class="profile-text">
+                                <h2 class="title">Mary Smushchk</h2>
+                                <p class="position">- CEO Writer's Mellincon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <p>Working with Mary Anyango has been one of the best experiences i have had. She never fails to deliver.</p>
+                        <div class="profile">
+                            <img src="./static/files/assets/interior-4400306_1280.jpg" alt="" class="profile-image">
+                            <div class="profile-text">
+                                <h2 class="title">Mary Smushchk</h2>
+                                <p class="position">- CEO Writer's Mellincon</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <button class="next" onclick="showSlide(1)">&#10095</button>
+            <!-- scri -->
         </div>
     </section>
     <section class="reveal blogs">

@@ -3,22 +3,22 @@
 // navToggle.addEventListener('click', ()=> {
 //     navLinks.classList.toggle('active')
 // })
-function showSlide(direction) {
-    let currentIndex = 0;
-    const slide = document.querySelector(".testimonial-slider");
-    const totalSlides = document.querySelectorAll(".testimonial").length;
-    currentIndex += direction;
+// function showSlide(direction) {
+//     let currentIndex = 0;
+//     const slide = document.querySelector(".testimonial-slider");
+//     const totalSlides = document.querySelectorAll(".testimonial").length;
+//     currentIndex += direction;
 
-    if(currentIndex >= totalSlides.length) {
-        currentIndex = 0;
-    } else if(currentIndex < totalSlides.length) {
-        currentIndex = totalSlides - 1 
-    } 
-    slide.style.transform = `translateX(-${currentIndex * 20}%)`;
-    }
-setInterval(() => {
-    showSlide(1)
-}, 150);
+//     if(currentIndex >= totalSlides.length) {
+//         currentIndex = 0;
+//     } else if(currentIndex < totalSlides.length) {
+//         currentIndex = totalSlides - 1 
+//     } 
+//     slide.style.transform = `translateX(-${currentIndex * 20}%)`;
+//     }
+// setInterval(() => {
+//     showSlide(1)
+// }, 150);
 
 // reveal funs
 

@@ -137,6 +137,43 @@ section {
     font-size: 16px;
     color: var(--color-secondary);
 }
+/* about-info section */
+.about-info {
+    width: 90%;
+    display: grid;
+    gap: 5rem;
+}
+.info-col {
+
+}
+.info-col > h2 {
+    font-size: 3.5vh;
+    text-align: start;
+    margin-bottom: 2em;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--accent-6);
+    font-family: Montserrat;
+    position: relative;
+    background: #87c90313;
+}
+.info-col > h2::after {
+    content: '';
+    width: 40%;
+    visibility: hidden;
+    height: 1px;
+    color: #00accc;
+    background: var(--accent-5);
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+}
+.info-col > p {
+    font-family: Poppins;
+    font-size: 16px;
+    color: var(--color-secondary);
+}
+/* experience section */
 .experience {
     width: 80%;
     margin-top: 5em;
@@ -346,7 +383,8 @@ footer {
 @media (max-width: 940px) {
     body {
         overflow-x: hidden;
-        gap: 1em;
+        gap: 3em;
+        display: grid;
     }
     .body-overlay {
         visibility: hidden;
@@ -405,6 +443,23 @@ footer {
         flex-direction: column;
         margin-top: 1em;
     }
+    /* about-info */
+    .info-col {
+
+    }
+    .info-col > h2 {
+        width: 80%;
+        font-size: 1.5em;
+        margin-bottom: 2em;
+        font-weight: 600;
+        padding: 10px;
+        border-radius: 30% 70% 70% 30% / 70% 70% 30% 30%;
+        background: linear-gradient(to left, #6a948a38, transparent);
+    }
+    .info-col > h2::after {
+        visibility: visible;
+    }
+    /* experience */
     .experience {
         width: 90%;
         padding: 2em;

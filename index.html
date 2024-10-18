@@ -8,40 +8,22 @@
     <title>Mary Anyango port..</title>
     <link rel="stylesheet" href="./static/files/styles/stye.css">
     <link rel="stylesheet" href="./static/files/assets/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./static/files/styles/assets.css">
     <script defer src="./static/files/script/script.js"></script>
 </head>
 <body>
     <img src="./static/files/assets/interior-4400306_1280.jpg" alt="" class="body-overlay">
-    <!-- <header class="header">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
+    <header class="header">
         <div class="logo">Mary Anyango</div>
-        <div class="navbar">
+        <div class="navigation" id="sideNav">
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portifolio</a>
-            <a href="#blog">Blog</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#" id="float">Contact</a>
+            <a href="./templates/about.html">About</a>
+            <a href="./templates/services.html">Services</a>
+            <a href="./templates/portfolio.html">Portfolio</a>
+            <a href="#" class="left">Contact me!</a>
+            <span class="navClose" onclick="closeNav()">&times</span>
         </div>
-    </header> -->
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">Mary Anyango</a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="./templates/about.html">About</a></li>
-                <li><a href="./templates/services.html">Services</a></li>
-                <li><a href="./templates/portfolio.html">Portfolio</a></li>
-                <li><a href="#" class="left">Contact me!</a></li>
-            </ul>
-            <button class="nav-toggle">
-                <span class="fa fa-bars humburger"></span>
-            </button>
-        </nav>
+        <span class="openNav" onclick="openNav()">&#9776</span>
     </header>
     <section class="introduction-cont">
         <div class="introduction">
@@ -145,7 +127,7 @@
     <section class="reveal testimonials">
         <h1>What my clients say.</h1>
         <div class="container">
-            <button class="prev" onclick="showSlide(-1)">&#10094</button>
+            <button class="prev" onclick="moveSlide(-1)">&#10094</button>
             <div class="testimonial-cont">
                 <div class="testimonial-slider">
                     <div class="testimonial">
@@ -194,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <button class="next" onclick="showSlide(1)">&#10095</button>
+            <button class="next" onclick="moveSlide(1)">&#10095</button>
             <!-- scri -->
         </div>
     </section>

@@ -3,22 +3,37 @@
 // navToggle.addEventListener('click', ()=> {
 //     navLinks.classList.toggle('active')
 // })
-// function showSlide(direction) {
-//     let currentIndex = 0;
-//     const slide = document.querySelector(".testimonial-slider");
-//     const totalSlides = document.querySelectorAll(".testimonial").length;
-//     currentIndex += direction;
+// const showSlide = (direction) => {}
+function openNav() {
+    document.getElementById("sideNav").style.width = "95%"
+}
+function closeNav() {
+    document.getElementById("sideNav").style.width = "0%"
+}
+let currentIndex = 0;
+const slide = document.querySelector(".testimonial-slider");
+const totalSlides = document.querySelectorAll(".testimonial").length;
 
-//     if(currentIndex >= totalSlides.length) {
-//         currentIndex = 0;
-//     } else if(currentIndex < totalSlides.length) {
-//         currentIndex = totalSlides - 1 
-//     } 
-//     slide.style.transform = `translateX(-${currentIndex * 20}%)`;
-//     }
-// setInterval(() => {
-//     showSlide(1)
-// }, 150);
+const showSlide = (slideIndex) => {
+    
+}
+const moveSlide = (index) => {
+    currentIndex += index;
+    showSlide(1)
+    slide.style.transform = `translateX(-${currentIndex * 20}%)`;
+}
+
+const autoSlide = () => {
+    moveSlide(1);
+    setTimeout(autoSlide, 3000)
+}
+
+// initialize slider
+// document.addEventListener("DOMContentLoaded", () => {
+//     showSlide(currentIndex);
+//     // showDot(index)
+//     autoSlide();
+// })
 
 // reveal funs
 
@@ -28,7 +43,7 @@ function reveal() {
     for (let i = 0; i < reveals.length; i++) {
         const windowHeight = window.innerHeight;
         const elementTop = reveals[i].getBoundingClientRect().top
-        const elementVisibe = 150;
+        const elementVisibe = 100;
 
         if (elementTop < windowHeight - elementVisibe) {
             reveals[i].classList.add("active")

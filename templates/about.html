@@ -8,24 +8,21 @@
     <title>about me..</title>
     <link rel="stylesheet" href="../static/files/styles/about.css">
     <link rel="stylesheet" href="../static/files/assets/fontawesome-free-6.5.2-web/css/all.min.css">
-    <script src="../static/files/script/script.js"></script>
+    <link rel="stylesheet" href="../static/files/styles/assets.css">
+    <script defer src="../static/files/script/script.js"></script>
 </head>
 <body>
     <header class="header">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
         <div class="logo">Mary Anyango</div>
-        <div class="navbar">
-            <a href="../index.html">Home</a>
+        <div class="navigation" id="sideNav">
+            <a href="/index.html">Home</a>
             <a href="./about.html">About</a>
-            <a href="#">Services</a>
-            <a href="./portfolio.html">Portifolio</a>
-            <!-- <a href="#">Blog</a>
-            <a href="#">Testimonials</a> -->
-            <a href="#" id="float">Contact me!</a>
+            <a href="./services.html">Services</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="#" class="left">Contact me!</a>
+            <span class="navClose" onclick="closeNav()">&times</span>
         </div>
+        <span class="openNav" onclick="openNav()">&#9776</span>
     </header>
     <section class="about">
         <p>With over 3 years of experience in editing, writing and teaching French. I am passionate in helping others communicate effectively and learn new languages. My journey began in 2012 when i was parsuing my masters.</p>

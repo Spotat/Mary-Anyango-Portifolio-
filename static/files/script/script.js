@@ -5,10 +5,12 @@
 // })
 // const showSlide = (direction) => {}
 function openNav() {
-    document.getElementById("sideNav").style.width = "95%"
+    document.getElementById("sideNav").style.width = "90%"
+    document.getElementById("sideNav").style.opacity = "1"
 }
 function closeNav() {
     document.getElementById("sideNav").style.width = "0%"
+    document.getElementById("sideNav").style.opacity = "0"
 }
 let currentIndex = 0;
 const slide = document.querySelector(".testimonial-slider");

@@ -1,0 +1,494 @@
+::root {
+    --height: 20rem;
+    --gap: 1.5rem;
+    --heading: 2.5rem;
+}
+@media (max-width: 600px) {
+    .body-overlay {
+        display: none;
+    }
+    header {
+        padding: 1rem 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .introduction {
+        padding: 0;
+        gap: var(--gap, 2rem);
+        box-shadow: none;
+        border-radius: 0%;
+        background: transparent;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .intro-col h3 {
+        font-size: 4vh;
+        font-weight: 700;
+    }
+    .intro-col p {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .cta-buttons {
+        width: 100%;
+        margin-top: var(--gap, 1.5rem);
+    }
+    .intro-col button {
+        width: fit-content;
+        padding: 10px 15px;
+        border-radius: 30px;
+        box-shadow: -5px 5px 8px rgba(0,0,0,0.2);
+    }
+    .intro-col img {
+        width: 100%;
+        --height: 20rem;
+        height: var(--height);
+        float: none;
+        box-shadow: inset -5px 5px 10px rgba(0,0,0,0.2);
+    }
+    .pager {
+        width: 100%;
+    }
+    section.about {
+        height: auto;
+    }
+    .about-cont {
+        grid-template-columns: 1fr;
+        gap: var(--gap, 1.5rem);
+    }
+    .about-cont > img {
+        width: 100%;
+        height: var(--height);
+        box-shadow: -10px 5px -5px rgba(0,0,0,0.2);
+    }
+    .about-container > h1 {
+        --style-heading: 3.5rem;
+        font-size: var(--style-heading,);
+        height: fit-content;
+    }
+    .paragraph {
+        grid-template-columns: 1fr;
+        gap: var(--gap, 1.5rem);
+    }
+    .paragraph > p:nth-child(1) {
+        margin-top: 0;
+    }
+    .paragraph > p:nth-child(2) {
+        font-weight: 500;
+    }
+    .about-container p {
+        font-weight: 400;
+    }
+    .about-container > button {
+        padding: 10px 15px;
+        margin-top: var(--gap, 1.5em);
+        border-radius: 10px;
+        margin-left: 0;
+    }
+    .about-overlay {
+        margin-bottom: var(--gap, 1.5rem);
+    }
+    .about-overlay > a {
+        font-size: 14px;
+        padding: 0;
+    }
+    .services {
+        padding: 0;
+        gap: var(--gap);
+    }
+    .services > h1 {
+        --heading: 2.5rem;
+        font-size: --heading;
+        margin-bottom: var(--gap, 1.5rem);
+        font-weight: 560;
+    }
+    .service-container {
+        gap: var(--gap, 1.5rem);
+        flex-direction: column;
+    }
+    .service {
+        --padding: 1rem;
+        padding: var(--padding, 1rem);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0.15em,
+        rgba(0,0,0,0.2) 0px 0.15em 85em;
+    }
+    .service > h2 i {
+        margin-right: 20px;
+        font-size: var(--heading);
+    }
+    .service > h2 {
+        --font-heading: 16px;
+        font-size: var(--font-heading, 16px);
+        font-weight: 640;
+    }
+    .service > p {
+        font-size: 15px;
+        margin-bottom: 20px;
+        line-height: normal;
+    }
+    .service > button {
+        padding: 10px 15px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    }
+    .service-page {
+        margin-top: var(--gap);
+    }
+    .service-page > i {
+        font-size: var(--font-heading, 16px);
+        font-weight: 600;
+    }
+    .services > img {
+        display: none;
+    }
+    .portfolio {
+        margin-top: 0;
+    }
+    .portfolio-container {
+        align-items: center;
+    }
+    .portfolio-container > h1 {
+        font-size: var(--heading, 1.5rem);
+        text-transform: capitalize;
+        font-weight: 560;
+    }
+    .portfolio-container > p {
+        margin-top: var(--gap, 1.5rem);
+        font-size: 15px;
+        text-align: center;
+    }
+    .projects {
+        gap: var(--gap, 1.5rem);
+        margin-top: var(--gap, 1.5rem);
+    }
+    .project {
+        padding: var(--padding, 1rem);
+        grid-template-columns: 1fr;
+        gap: var(--gap, 1.5rem);
+    }
+    .project-image {
+        height: 15rem;
+        width: 100%;
+    }
+    .project-body {
+        justify-content: center;
+    }
+    .project-body > h2 {
+        font-size: --16px;
+        max-width: 100%;
+    }
+    .project-body > h2 i {
+        display: none;
+    }
+    .project-role {
+        margin-top: var(--gap, 1.5rem);
+        gap: var(--gap, 10px);
+    }
+    .project-body > p {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+    .project-link {
+        margin-top: var(--gap, 1.5rem);
+    }
+    .project-link > a {
+        font-size: var(--font-heading, 16px);
+    }
+    .testimonials {
+        width: 90%;
+        height: auto;
+        gap: var(--gap, 1.5rem);
+        margin-top: var(--gap, 1.5rem);
+    }
+    .testimonials h1 {
+        font-size: var(--heading, 1.5rem);
+        font-weight: 560;
+    }
+    .testimonials > .container {
+        width: 100%;
+        gap: var(--gap, 1.5rem);
+        flex-direction: column;
+        justify-content: center;
+    }
+    .testimonials button {
+        display: none;
+    }
+    .testimonial-cont {
+        overflow: hidden;
+    }
+    .testimonial-slider {
+        flex-direction: column;
+        padding: 0;
+        gap: var(--gap, 1.5rem);
+    }
+    .testimonial {
+        padding: var(--padding, 1rem);
+        box-shadow: 5px 4px 10px rgba(0,0,0,0.1);
+    }
+    .testimonial > span {
+        --icon: 1.225em;
+        font-size: var(--icon, 1.225em);
+        padding: 0;
+    }
+    .testimonial > p {
+        line-height: normal;
+        font-weight: 500;
+    }
+    .profile {
+        gap: var(--gap, 1.5rem);
+    }
+    .profile-text > h2 {
+        font-size: 15px;
+    }
+    .profile-text > p {
+        font-weight: 400;
+    }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    header {
+        padding: 1.5rem;
+        max-width: 80%;
+        border-radius: 5px;
+        position: fixed;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .introduction {
+        width: 80%;
+        padding: 0;
+        gap: var(--gap, 4rem);
+        box-shadow: none;
+        border-radius: 0%;
+        background: transparent;
+        flex-direction: column;
+        margin-top: 0;
+        justify-content: center;
+    }
+    .intro-col h3 {
+        font-size: 5.5vh;
+        font-weight: 700;
+    }
+    .intro-col p {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .cta-buttons {
+        margin-top: var(--gap, 2rem);
+    }
+    .intro-col button {
+        width: fit-content;
+        padding: 10px 30px;
+        border-radius: 30px;
+        box-shadow: -5px 5px 8px rgba(0,0,0,0.2);
+    }
+    .intro-col img {
+        width: 80%;
+        --height: 30rem;
+        height: var(--height);
+        float: none;
+        box-shadow: inset -5px 5px 10px rgba(0,0,0,0.2);
+    }
+    .pager {
+        width: 100%;
+    }
+    section.about {
+        height: auto;
+        width: 80%;
+    }
+    .about-cont {
+        grid-template-columns: 1fr;
+        gap: var(--gap, 4rem);
+    }
+    .about-cont > img {
+        width: 100%;
+        height: var(--height);
+        box-shadow: -10px 5px -5px rgba(0,0,0,0.2);
+    }
+    .about-container > h1 {
+        --style-heading: 4rem;
+        font-size: var(--style-heading,);
+        height: fit-content;
+    }
+    .paragraph {
+        grid-template-columns: 1fr;
+        gap: var(--gap, 4rem);
+    }
+    .paragraph > p:nth-child(1) {
+        margin-top: 4rem;
+    }
+    .paragraph > p:nth-child(2) {
+        font-weight: 500;
+    }
+    .about-container p {
+        font-weight: 400;
+    }
+    .about-container > button {
+        padding: 10px 15px;
+        margin-top: var(--gap, 2em);
+        border-radius: 10px;
+        margin-left: 0;
+    }
+    .about-overlay {
+        margin-bottom: var(--gap, 4rem);
+    }
+    .about-overlay > a {
+        font-size: 15px;
+        padding: 0;
+    }
+    .services {
+        padding: 0;
+        gap: var(--gap);
+        width: 80%;
+    }
+    .services > h1 {
+        --heading: 3rem;
+        font-size: --heading;
+        margin-bottom: var(--gap, 4rem);
+        font-weight: 560;
+    }
+    .service-container {
+        gap: var(--gap, 4rem);
+        flex-direction: column;
+    }
+    .service {
+        --padding: 4rem;
+        padding: var(--padding, 4rem);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0.15em,
+        rgba(0,0,0,0.2) 0px 0.15em 85em;
+    }
+    .service > h2 i {
+        margin-right: 20px;
+        font-size: var(--heading);
+    }
+    .service > h2 {
+        --font-heading: 17px;
+        font-size: var(--font-heading, 18px);
+        font-weight: 640;
+    }
+    .service > p {
+        font-size: 16px;
+        margin-bottom: 40px;
+        line-height: normal;
+    }
+    .service > button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    }
+    .service-page {
+        margin-top: var(--gap, 4rem);
+        text-align: center;
+    }
+    .service-page > i {
+        font-size: var(--font-heading, 17px);
+        font-weight: 600;
+    }
+    .services > img {
+        display: none;
+    }
+    .portfolio {
+        margin-top: 0;
+        width: 80%;
+    }
+    .portfolio-container {
+        align-items: center;
+        width: 100%;
+    }
+    .portfolio-container > h1 {
+        font-size: var(--heading, 2.5rem);
+        text-transform: capitalize;
+        font-weight: 660;
+    }
+    .portfolio-container > p {
+        margin-top: var(--gap, 2rem);
+        font-size: 16px;
+        text-align: center;
+    }
+    .projects {
+        gap: var(--gap, 4rem);
+        margin-top: var(--gap, 4rem);
+    }
+    .project {
+        padding: var(--padding, 1.5rem);
+        grid-template-columns: 1fr;
+        gap: var(--gap, 2rem);
+    }
+    .project-image {
+        height: 25rem;
+        width: 100%;
+    }
+    .project-body {
+        justify-content: center;
+    }
+    .project-body > h2 {
+        font-size: --16px;
+        max-width: 100%;
+    }
+    .project-body > h2 i {
+        display: none;
+    }
+    .project-role {
+        margin-top: var(--gap, 2rem);
+        gap: var(--gap, 20px);
+    }
+    .project-body > p {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    .project-link {
+        margin-top: var(--gap, 2rem);
+    }
+    .project-link > a {
+        font-size: var(--font-heading, 17px);
+    }
+    .testimonials {
+        width: 80%;
+        height: auto;
+        gap: var(--gap, 4rem);
+        margin-top: var(--gap, 4rem);
+    }
+    .testimonials h1 {
+        font-size: var(--heading, 2.5rem);
+        font-weight: 560;
+    }
+    .testimonials > .container {
+        width: 100%;
+        gap: var(--gap, 4rem);
+        flex-direction: column;
+        justify-content: center;
+    }
+    .testimonials button {
+        display: none;
+    }
+    .testimonial-cont {
+        overflow: hidden;
+    }
+    .testimonial-slider {
+        flex-direction: column;
+        padding: 0;
+        gap: var(--gap, 2rem);
+    }
+    .testimonial {
+        padding: var(--padding, 4rem);
+        box-shadow: 5px 4px 10px rgba(0,0,0,0.1);
+    }
+    .testimonial > span {
+        --icon: 1.825em;
+        font-size: var(--icon, 1.825em);
+        padding: 0;
+    }
+    .testimonial > p {
+        line-height: normal;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    .profile {
+        gap: var(--gap, 2rem);
+        margin-top: 20px;
+    }
+    .profile-text > h2 {
+        font-size: 16px;
+    }
+    .profile-text > p {
+        font-weight: 400;
+    }
+}

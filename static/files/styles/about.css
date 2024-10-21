@@ -86,17 +86,27 @@ section {
     color: var(--accent-6);
     font-family: Montserrat;
     position: relative;
-    background: #87c90313;
+}
+.info-col h2 span {
+    position: absolute;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #87c90383;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
 }
 .info-col > h2::after {
     content: '';
-    width: 40%;
+    width: 30%;
     visibility: hidden;
     height: 1px;
+    border-radius: 50%;
     color: #00accc;
-    background: var(--accent-5);
+    background: #6a948a;
     left: 0;
-    bottom: -10px;
+    bottom: -16px;
     position: absolute;
 }
 .info-col > p {
@@ -295,7 +305,7 @@ footer {
 }
 @keyframes texter {
     from {
-        transform: translateX(100%);
+        transform: translateX(-200px);
     }
     to {
         transform: translateX(0);
@@ -303,7 +313,7 @@ footer {
 }
 @keyframes texterUp {
     from {
-        transform: translateY(100%);
+        transform: translateY(-200px);
     }
     to {
         transform: translateY(0);
@@ -311,10 +321,9 @@ footer {
 }
 
 /* Media query */
-@media (max-width: 940px) {
+@media (max-width: 600px) {
     body {
         overflow-x: hidden;
-        gap: 3em;
         display: grid;
     }
     .body-overlay {
@@ -323,9 +332,8 @@ footer {
     /* about  section */
     .about {
         width: 90%;
-        padding: 1em;
         flex-direction: column;
-        margin-top: 1em;
+        margin-top: 1.5em;
     }
     /* about-info */
     .info-col {
@@ -333,12 +341,10 @@ footer {
     }
     .info-col > h2 {
         width: 80%;
-        font-size: 1.5em;
-        margin-bottom: 2em;
+        font-size: 18px;
+        margin-bottom: 1.5em;
         font-weight: 600;
         padding: 10px;
-        border-radius: 30% 70% 70% 30% / 70% 70% 30% 30%;
-        background: linear-gradient(to left, #6a948a38, transparent);
     }
     .info-col > h2::after {
         visibility: visible;
@@ -346,22 +352,22 @@ footer {
     /* experience */
     .experience {
         width: 90%;
-        padding: 2em;
-        margin-top: 3em;
+        padding: 1em;
+        margin-top: 1.5em;
     }
     .experience > h1 {
-        margin-bottom: 2em;
-        font-size: 1.6em;
+        margin-bottom: 1.5em;
+        font-size: 1.5em;
     }
     .exp-col {
         grid-template-columns: 1fr;
-        gap: 3em;
+        gap: 1.5em;
     }
     .work {
-        gap: 1em;
+        gap: 1.5em;
     }
     .work > h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     /* footer section */
     footer {
@@ -392,72 +398,24 @@ footer {
  
 }
 /* Media query */
-@media (max-width: 740px) {
+@media (min-width: 600px) and (max-width: 768px) {
     body {
         overflow-x: hidden;
-        gap: 1em;
-    }
-    .body-overlay {
-        visibility: hidden;
-    }
-    header {
-        width: 100%;
-        position: relative;
-        max-width: 100%;
-        padding: 1em 0;
-        margin-top: 10px;
-        flex-direction: column;
-        box-shadow: none;
-        box-shadow: -1px 1px 4px rgba(0,0,0,0.1);
-        /* padding: 1rem 8rem; */
-    }
-    .logo {
-        font-size: 1.4rem;
-        font-weight: 780;
-        align-self: flex-start;
-        padding: 10px;
-    }
-    .navbar {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        max-height: 100%;
-        z-index: 99;
-        background: #292426e5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 4em;
-        justify-content: center;
-        left: -100%;
-        opacity: 0;
-        transition: all .6s ease;
-    }
-    .navbar > a{
-        font-size: 20px;
-        color: var(--color-secondary);
-        text-decoration: none;
-        /* margin-left: 10px; */
-        padding: 10px 15px;
-        z-index: 99;
-    }
-    .navbar >#float {
-        margin-left: 0;
-    }
-    .checkbtn {
-        visibility: visible;
     }
     /* about  section */
     .about {
-        width: 100%;
-        padding: 1em;
+        width: 80%;
+        padding: 0;
         flex-direction: column;
-        margin-top: 1em;
+        margin-top: 2rem;
+    }
+    .about-info {
+        width: 80%;
     }
     .experience {
-        width: 100%;
-        padding: 2em;
-        margin-top: 3em;
+        width: 80%;
+        padding: 0;
+        margin-top: 2em;
     }
     .experience > h1 {
         margin-bottom: 2em;
@@ -465,13 +423,13 @@ footer {
     }
     .exp-col {
         grid-template-columns: 1fr;
-        gap: 3em;
+        gap: 2em;
     }
     .work {
-        gap: 1em;
+        gap: 2em;
     }
     .work > h2 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
     /* footer section */
     footer {

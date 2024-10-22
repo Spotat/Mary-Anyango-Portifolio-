@@ -4,6 +4,9 @@
     --heading: 2.5rem;
 }
 @media (max-width: 600px) {
+    body {
+        gap: 10rem;
+    }
     .body-overlay {
         display: none;
     }
@@ -12,9 +15,12 @@
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+    .introduction-cont {
+        min-height: 90vh;
+    }
     .introduction {
         padding: 0;
-        gap: var(--gap, 2rem);
+        gap: var(--gap, 4rem);
         box-shadow: none;
         border-radius: 0%;
         background: transparent;
@@ -22,7 +28,7 @@
         margin-top: 0;
     }
     .intro-col h3 {
-        font-size: 4vh;
+        font-size: 2.2rem;
         font-weight: 700;
     }
     .intro-col p {
@@ -62,8 +68,8 @@
         box-shadow: -10px 5px -5px rgba(0,0,0,0.2);
     }
     .about-container > h1 {
-        --style-heading: 3.5rem;
-        font-size: var(--style-heading,);
+        --style-heading: 2.5rem;
+        font-size: var(--style-heading, 2.5rem);
         height: fit-content;
     }
     .paragraph {

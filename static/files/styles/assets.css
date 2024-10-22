@@ -178,7 +178,7 @@ footer {
 /* end of section */
 
 @media (min-width: 600px) and (max-width: 768px) {
-    .header 
+    
 }
 @media (max-width: 768px) {
     .header {
@@ -187,9 +187,10 @@ footer {
         box-shadow: none;
         padding: 1.5rem 1rem;
     }
-    .logo {
-        font-size: 1.4rem;
+    header > .logo {
+        font-size: 1.2rem;
         font-weight: 780;
+        text-transform: capitalize;
         align-self: flex-start;
     }
     #sideNav {

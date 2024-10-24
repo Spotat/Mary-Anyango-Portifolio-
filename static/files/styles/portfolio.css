@@ -297,6 +297,7 @@ img, p {
     }
     .project-body > h2 {
         font-size: 1.3em;
+        text-transform: capitalize;
     }
     .project-body > p {
         --max-lines: 3;

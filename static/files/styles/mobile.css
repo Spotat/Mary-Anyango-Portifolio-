@@ -106,7 +106,7 @@
         --heading: 2.5rem;
         font-size: --heading;
         margin-bottom: var(--gap, 1.5rem);
-        font-weight: 560;
+        font-weight: 700;
     }
     .service-container {
         gap: var(--gap, 1.5rem);
@@ -123,8 +123,8 @@
         font-size: var(--heading);
     }
     .service > h2 {
-        --font-heading: 16px;
-        font-size: var(--font-heading, 16px);
+        --font-heading: 18px;
+        font-size: var(--font-heading, 18px);
         font-weight: 640;
     }
     .service > p {
@@ -156,7 +156,7 @@
     .portfolio-container > h1 {
         font-size: var(--heading, 1.5rem);
         text-transform: capitalize;
-        font-weight: 560;
+        font-weight: 690;
     }
     .portfolio-container > p {
         margin-top: var(--gap, 1.5rem);

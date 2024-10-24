@@ -133,9 +133,9 @@ footer {
     gap: var(--gap, 5px);
 }
 .media > a {
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
-    color: var(--accent-3);
+    color: var(--accent-6);
     padding: 10px;
     border-radius: 50%;
 }

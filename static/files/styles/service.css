@@ -1,0 +1,184 @@
+:root {
+    --color-primary: #000a03;
+    --color-secondary: #d0c5b4;
+    --color-tertiary: #6a948a;
+    --color-accent: #292426;
+    --accent-2: #541611;
+    --accent-3: #fffef6;
+    --accent-main: #88c903;
+    --accent-4: #17243e;
+    --accent-5: #c2c9d0;
+    --accent-6: #00accc;
+    --text-size-body: 16px;
+    --text-size-heading: 20px;
+    --text-size-button: 16px;
+    --text-size-sub-heading: 14px;
+    --letter-spacing-body: calc(1.5*var(--text-size-body));
+    --letter-spacing-heading: calc(1.3*var(--text-size-heading))
+    --letter-spacing-sub-heading: calc(1.5*var(--text-size-sub-heading))
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../assets/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../assets/Raleway/Raleway-VariableFont_wght.ttf);
+    font-feature-settings: "wdth" 160;
+    font-variation-settings: "wdth" 160;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: #292426;
+    display: grid;
+    place-items: center;
+    gap: 5rem;
+}
+.container-fluid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-fluid > h1 {
+    font-size: 7vh;
+    font-family: Raleway;
+    text-align: center;
+    color: var(--accent-6);
+    font-weight: 650;
+    font-stretch: 160%;
+    font-feature-settings: "strch" 160;
+}
+.container-fluid > p {
+    font-size: 16px;
+    font-family: Montserrat;
+    text-align: center;
+    color: var(--accent-5);
+}
+.container {
+    margin-top: 5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 10rem;
+}
+.container-col {
+    display: grid;
+    gap: 5rem;
+}
+.box {
+    /* width: 60%; */
+    min-width: 300px;
+    /* padding: 20px 0; */
+    display: grid;
+    /* box-shadow: -10px 15px 20px rgba(0,0,0,0.1); */
+    border-radius: 10px;
+    /* background: var(--color-accent); */
+    /* padding: 1.5rem; */
+    /* border: 1px solid #00adcc65; */
+}
+.box-title {
+    padding: 20px;
+    background: #00adcc1a;
+    border-radius: 10px;
+}
+.box > .box-title > h2 {
+    font-family: Montserrat;
+    text-transform: capitalize;
+    font-size: 3.5vh;
+    font-weight: 540;
+    color: var(--color-secondary);
+}
+.box-title > h5 {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: start;
+    font-family: Poppins;
+    color: var(--accent-main);
+}
+/* .box-title {
+    width: 100%;
+    text-align: center;
+} */
+.box-body {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.box-body > ul {
+    list-style: disc;
+    color: white;
+    margin-left: 30px;
+}
+.box-body > ul li {
+
+}
+
+.box-body p {
+    font-size: 15px;
+    font-family: Poppins;
+    margin-top: 10px;
+    position: relative;
+    color: var(--accent-5);
+}
+.box-body p::after {
+    content: '';
+    display: none;
+    width: 30%;
+    height: 3px;
+    background: #6a948ac7;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+.box > button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-align: center;
+    font-family: Raleway;
+    background: #00adccd7;
+    border: none;
+    border-radius: 10px;
+    color: var(--accent-3);
+    font-weight: 500;
+    font-size: 17px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.box > button:hover {
+    background: #00accc;
+    box-shadow: -5 8px 15px rgba(0,0,0,0.3);
+}
+@media (max-width: 600px) {
+    .container-fluid > h1 {
+        font-size: 2rem;
+    }
+    .container {
+        padding: 1rem;
+        gap: 3rem;
+    }
+    .box > .box-title > h2 {
+        font-size: 1.2em;
+    }
+    .container-col {
+        gap: 3rem;
+    }
+}

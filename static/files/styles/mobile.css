@@ -64,7 +64,7 @@
     }
     .about-cont > img {
         width: 100%;
-        height: var(--height);
+        height: var(--height, 20rem);
         box-shadow: -10px 5px -5px rgba(0,0,0,0.2);
     }
     .about-container > h1 {

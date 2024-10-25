@@ -105,6 +105,18 @@ body {
     letter-spacing: normal;
     text-wrap: nowrap;
 }
+.project-body:nth-child(2) > h2,
+.project-body:nth-child(3) > h2{
+    margin-bottom: 10px;
+    line-height: normal;
+}
+.project-body > h5 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
 .project-body > h2 i {
     font-size: 15px;
     padding: 5px;
@@ -296,8 +308,10 @@ img, p {
         min-height: 150px;
     }
     .project-body > h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
         text-transform: capitalize;
+        text-wrap: wrap;
+        line-height: 1.5;
     }
     .project-body > p {
         --max-lines: 3;

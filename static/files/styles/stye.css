@@ -502,16 +502,18 @@ section.about {
 }
 .service > button {
     padding: 10px 20px;
-    color: var(--accent-6);
     background: #00adcc2d;
-    font-family: Montserrat;
-    font-weight: 660;
-    font-size: var(--text-size-button);
     border: none;
     border-radius: 20px;
     cursor: pointer;
     transition: all .8s;
     box-shadow: -10px 8px 10px rgba(0, 0, 0, 0.2) inset;
+}
+.service > button a {
+    font-family: Montserrat;
+    font-weight: 660;
+    font-size: var(--text-size-button);
+    color: var(--accent-6);
 }
 .service > button:hover {
     background: var(--accent-6);

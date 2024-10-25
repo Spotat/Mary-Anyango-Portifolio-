@@ -178,9 +178,89 @@ footer {
 /* end of section */
 
 @media (min-width: 600px) and (max-width: 768px) {
-    
+    .header {
+        max-width: 100%;
+        flex-direction: column;
+        box-shadow: none;
+        padding: 1.5rem 3.5rem;
+    }
+    header > .logo {
+        font-size: 1.5rem;
+        font-weight: 780;
+        text-transform: capitalize;
+        align-self: flex-start;
+    }
+    #sideNav {
+        position: absolute;
+        height: 100vh;
+        min-height: 100%;
+        top: 0;
+        left: -20px;
+        width: 0%;
+        z-index: -99;
+        display: flex;
+        visibility: hidden;
+        align-items: center;
+        justify-content: center;
+        background: #333333e1;
+        flex-direction: column;
+        z-index: 99;
+    }
+    .header > .openNav {
+        display: block;
+        right: 2.5rem;
+    }
+    #sideNav > .navClose {
+        display: block;
+    }
+    #sideNav > a {
+        color: var(--color-secondary);
+        font-size: 1em;
+    }
+    footer {
+        justify-content: flex-start;
+        padding: 2rem 0;
+    }
+    .footer-container {
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+        gap: var(--gap, 2rem);
+    }
+    .footer-col {
+        flex: 100%;
+        width: 100%;
+        padding: 0;
+        gap: var(--gap, 20px);
+    }
+    .footer-col > h2 {
+        font-size: var(--heading, 16px);
+        margin-bottom: 0;
+    }
+    .footer-col > p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .media > a {
+        font-size: 16px;
+    }
+    .footer-col a  {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .copyright {
+        padding: 0;
+    }
+    .copyright > p {
+        font-weight: 400;
+        font-size: 12px;
+        text-align: start;
+    }
+    .copyright > p:nth-last-child(1) {
+        margin-top: 20px;
+    }
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .header {
         max-width: 100%;
         flex-direction: column;

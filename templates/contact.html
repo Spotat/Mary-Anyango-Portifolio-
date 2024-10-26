@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
-    <link rel="stylesheet" href="./static/files/styles/assets.css">
-    <script defer src="./static/files/script/script.js"></script>
+    <link rel="stylesheet" href="../static/files/styles/assets.css">
+    <link rel="stylesheet" href="../static/files/styles/contact.css">
+    <link rel="stylesheet" href="../static/files/assets/fontawesome-free-6.5.2-web/css/all.css">
+    <script defer src="../static/files/script/script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -20,7 +22,44 @@
         </div>
         <span class="openNav" onclick="openNav()">&#9776</span>
     </header>
-    
+    <section class="contact-section">
+        <div class="row">
+            <div class="contact-container">
+                <span class="fa-brands fa-whatsapp"></span>
+                <div class="contact-details">
+                    <h2>Chat to me</h2>
+                    <p>I'm here to help</p>
+                    <h5><a href="#">hi.maryanyango.com</a></h5>
+                </div>
+            </div>
+            <div class="contact-container">
+                <span class="fa fa-phone"></span>
+                <div class="contact-details">
+                    <h2>Call me</h2>
+                    <p>Mon - Fri from 8am to 10pm</p>
+                    <h5><a href="#">+33 12432359</a></h5>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <form action="#" method="post">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque mollitia.</h2>
+                <p>Tell me more about your self and what you have in mind</p>
+                <div class="form">
+                    <div class="input-field">
+                        <input type="text" name="name" placeholder="Your name">
+                    </div>
+                    <div class="input-field">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <textarea name="subject" rows="8" cols="50" placeholder="Tell me more about your project..."></textarea>
+                    </div>
+                    <input type="submit" value="Let's get started">
+                </div>
+            </form>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-col">
@@ -30,10 +69,10 @@
             </div>
             <div class="footer-col">
                 <h2>Quick Links</h2>
-                <a href="#"><i class="fa fa-angle-right"></i> Home</a>
-                <a href="#"><i class="fa fa-angle-right"></i> Services</a>
-                <a href="#"><i class="fa fa-angle-right"></i> About</a>
-                <a href="#"><i class="fa fa-angle-right"></i> Portfolio</a>
+                <a href="../index.html"><i class="fa fa-angle-right"></i> Home</a>
+                <a href="./services.html"><i class="fa fa-angle-right"></i> Services</a>
+                <a href="./about.html"><i class="fa fa-angle-right"></i> About</a>
+                <a href="./portfolio.html"><i class="fa fa-angle-right"></i> Portfolio</a>
             </div>
             <div class="footer-col">
                 <h2>Services</h2>

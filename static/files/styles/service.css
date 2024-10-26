@@ -94,6 +94,9 @@ body {
     /* padding: 1.5rem; */
     /* border: 1px solid #00adcc65; */
 }
+.box > span {
+    display: none;
+}
 .box-title {
     padding: 20px;
     background: #00adcc1a;
